@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Путешествие по Европе</title>
-<!--    <link rel="preload" href="fonts/ptsans.woff" as="font">
-    <link rel="preload" href="fonts/ptsans.woff2" as="font">
-    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
-    <link href="css/style.min.css" rel="stylesheet">-->
+    <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff" as="font">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
+
   <body>
-Привет друзья!
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-image.png" width="57" height="22" alt="Логотип компании">
+      </a>
+      <div class="page-header__wrapper">
+        <nav class="page-header__nav main-nav">
+          <a class="main-nav__link" href="#places-of-visit">О путешествии</a>
+          <a class="main-nav__link main-nav__link--prices" href="#prices">Цены</a>
+        </nav>
+        <div class="page-header__link-tel tel-link">
+          <svg class="tel-link__tel-icon" width="30" height="30"><use xlink:href="img/sprite.svg#sprite-icon-phone"></use></svg>
+          <a class="tel-link__tel-number" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </div>
+      </div>
+    </header>
 
   </body>
 </html>

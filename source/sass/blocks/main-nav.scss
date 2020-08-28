@@ -1,0 +1,20 @@
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-nav__link {
+  margin-right: 43px;
+
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  color: #141517;
+
+  &--prices {
+    margin-right: 55px;
+
+    color: #FE7865;
+  }
+}

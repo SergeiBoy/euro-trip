@@ -1,0 +1,16 @@
+
+.tel-link {
+  display: flex;
+}
+
+.tel-link__tel-icon {
+  margin-right: 8px;
+}
+
+.tel-link__tel-number {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #FE7865;
+}
