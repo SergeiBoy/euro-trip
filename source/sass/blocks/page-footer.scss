@@ -1,0 +1,219 @@
+
+.page-footer {
+  position: relative;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1200px;
+  min-width: $min-width;
+  padding-bottom: 20px;
+}
+
+.page-footer__item {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 42.2%;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &--contacts {
+    width: 26%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &--corporate-travel {
+    width: 31.8%;
+    padding-left: 36px;
+    padding-right: 20px;
+  }
+
+  &--next-trips::after {
+    content: "";
+
+    position: absolute;
+    top: 19px;
+    left: 417px;
+
+    width: 1px;
+    height: 190px;
+
+    background-color: #d7d9df;
+  }
+
+  &--contacts::after {
+    content: "";
+
+    position: absolute;
+    top: 19px;
+    right: 3%;
+
+    width: 1px;
+    height: 190px;
+
+    background-color: #d7d9df;
+  }
+}
+
+.page-footer__item-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__item-list-item:first-child,
+.page-footer__item-list-item:nth-child(2) {
+  margin-right: 48px;
+}
+
+.page-footer__item-heading {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #141517;
+}
+
+.page-footer__cities-list-item,
+.page-footer__corporate-travel-paragraph {
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  color: rgba(20, 21, 23, 0.5);
+}
+
+.page-footer__corporate-travel-paragraph {
+  line-height: 24px;
+}
+
+.page-footer__link-email {
+  margin-top: 22px;
+  margin-bottom: 15px;
+
+  display: flex;
+}
+
+.page-footer__email-icon {
+  margin-right: 10px;
+}
+
+.page-footer__email-address {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #fe7865;
+}
+
+.page-footer__email-address-as-word {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer {
+    flex-wrap: wrap;
+  }
+
+  .page-footer__item {
+    width: 60%;
+
+    &--contacts {
+      width: 40%;
+      padding-right: 20px;
+    }
+
+    &--corporate-travel {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 35px;
+
+      text-align: center;
+    }
+
+    &--next-trips::after {
+      left: 425px;
+
+      height: 180px;
+    }
+
+    &--contacts::after {
+      top: 225px;
+      right: 30px;
+
+      width: 231%;
+      height: 1px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 20px;
+
+    &--next-trips::after,
+    &--contacts::after {
+      top: 359px;
+      left: 20px;
+
+      width: 85%;
+      height: 1px;
+    }
+
+    &--contacts::after {
+      top: 178px;
+    }
+  }
+
+  .page-footer__item-heading {
+    &--contacts {
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+
+    &--corporate-travel {
+      margin-top: 11px;
+      margin-bottom: 9px;
+      margin-left: 18px;
+    }
+  }
+
+  .page-footer__item-list {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .page-footer__item-list-item:first-child,
+  .page-footer__item-list-item:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .page-footer__item-list-item:nth-child(3) {
+    padding-top: 10px;
+  }
+
+  .page-footer__item-list-item {
+    width: 50%;
+
+    text-align: center;
+  }
+
+  .page-footer__corporate-travel-paragraph {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .page-footer__email-address-as-word {
+    display: inline;
+  }
+
+  .page-footer__email-address-as-email {
+    display: none;
+  }
+}

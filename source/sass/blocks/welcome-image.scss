@@ -1,0 +1,49 @@
+
+.welcome-image {
+  position: relative;
+  margin: 0 auto;
+
+  max-width: 1920px;
+}
+
+.welcome-image__text {
+  position: absolute;
+  top: 16.5%;
+  right: 17.3%;
+
+  width: 500px;
+}
+
+.welcome-image__heading {
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -1.10667px;
+  color: #ffffff;
+}
+
+.welcome-image__paragraph {
+font-size: 16px;
+line-height: 27px;
+font-weight: 400;
+letter-spacing: -0.466667px;
+color: #ffffff;
+}
+
+.welcome-image__link {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 340px;
+  min-height: 75px;
+  padding: 20px;
+
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: #fe7865;
+}

@@ -15,6 +15,11 @@
   </head>
 
   <body>
+
+    <div style="display:none;">
+      <include src="source/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <a class="page-header__logo">
         <img class="page-header__logo-image" src="img/logo-image.png" width="57" height="22" alt="Логотип компании">
@@ -26,11 +31,85 @@
           <a class="main-nav__link main-nav__link--prices" href="#prices">Цены</a>
         </nav>
         <div class="page-header__link-tel tel-link">
-          <svg class="tel-link__tel-icon" width="30" height="30"><use xlink:href="img/sprite.svg#sprite-icon-phone"></use></svg>
+          <svg class="tel-link__tel-icon" width="30" height="30"><use xlink:href="#sprite-icon-phone"></use></svg>
           <a class="tel-link__tel-number" href="tel:+749978468446">+7 (499) -784-684-46</a>
         </div>
       </div>
     </header>
+
+    <main class="page-main">
+
+      <div class="welcome-image">
+        <picture class="welcome-image__picture">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/top-photo-mobile@1x.webp 1x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/top-photo-tablet@1x.webp 1x">
+          <source type="image/webp" srcset="img/top-photo-desktop@1x.webp 1x">
+          <source media="(max-width: 767px)" srcset="img/top-photo-mobile@1x.jpg 1x">
+          <source media="(max-width: 1023px)" srcset="img/top-photo-tablet@1x.jpg 1x">
+          <img src="img/top-photo-desktop@1x.jpg" width="1920" height="860" alt="Красивый вид гор">
+        </picture>
+        <div class="welcome-image__text">
+          <h2 class="welcome-image__heading">Путешествие по Европе</h2>
+          <p class="welcome-image__paragraph">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
+          <a class="welcome-image__link" href="#tabs">Смотреть тур</a>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__item page-footer__item--next-trips">
+        <h3 class="page-footer__item-heading">Следующие путешествия</h3>
+        <ul class="page-footer__item-list reset-list">
+          <li class="page-footer__item-list-item">
+            <ul class="reset-list">
+              <li class="page-footer__cities-list-item">Марсель</li>
+              <li class="page-footer__cities-list-item">Ним</li>
+              <li class="page-footer__cities-list-item">Монпелье</li>
+              <li class="page-footer__cities-list-item">Барселона</li>
+              <li class="page-footer__cities-list-item">Пальма</li>
+            </ul>
+          </li>
+          <li class="page-footer__item-list-item">
+            <ul class="reset-list">
+              <li class="page-footer__cities-list-item">Сардиния</li>
+              <li class="page-footer__cities-list-item">Палермо</li>
+              <li class="page-footer__cities-list-item">Катания</li>
+              <li class="page-footer__cities-list-item">Неаполь</li>
+              <li class="page-footer__cities-list-item">Рим</li>
+            </ul>
+          </li>
+          <li class="page-footer__item-list-item">
+            <ul class="reset-list">
+              <li class="page-footer__cities-list-item">Корс</li>
+              <li class="page-footer__cities-list-item">Ницца</li>
+              <li class="page-footer__cities-list-item">Монако</li>
+              <li class="page-footer__cities-list-item">Динь-ле-Бен</li>
+              <li class="page-footer__cities-list-item">Гренобль</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__item page-footer__item--contacts">
+        <h3 class="page-footer__item-heading page-footer__item-heading--contacts">Наши контакты</h3>
+        <div class="page-footer__link-email">
+          <svg class="page-footer__email-icon" width="26" height="20"><use xlink:href="#sprite-icon-email"></use></svg>
+          <a class="page-footer__email-address" href="mailto:puteshestviemechta@gmail.ru"><span class="page-footer__email-address-as-email">puteshestviemechta@gmail.ru</span><span class="page-footer__email-address-as-word">Почта</span></a>
+        </div>
+        <div class="page-footer__link-tel tel-link">
+          <svg class="tel-link__tel-icon tel-link__tel-icon--footer" width="30" height="30"><use xlink:href="#sprite-icon-phone"></use></svg>
+          <a class="tel-link__tel-number tel-link__tel-number--footer" href="tel:+749978468446">+7 (499) -784-684-46</a>
+        </div>
+      </div>
+      <div class="page-footer__item page-footer__item--corporate-travel">
+        <h3 class="page-footer__item-heading page-footer__item-heading--corporate-travel">Корпоративные путешествия</h3>
+        <p class="page-footer__corporate-travel-paragraph">
+          Также вы можете заказать индивидуальное путешествие под вашу компанию.
+          Подобные туры очень сближают компанию,&nbsp;помогают поддерживать корпоративный дух,
+          а также являются оличным времяпрепровождением
+        </p>
+      </div>
+    </footer>
 
     <script src="js/menu.js"></script>
   </body>
