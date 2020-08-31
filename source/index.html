@@ -16,7 +16,7 @@
 
   <body>
 
-    <div style="display:none;">
+    <div style="display:none">
       <include src="source/img/sprite.svg"></include>
     </div>
 
@@ -51,9 +51,102 @@
         <div class="welcome-image__text">
           <h2 class="welcome-image__heading">Путешествие по Европе</h2>
           <p class="welcome-image__paragraph">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-          <a class="welcome-image__link" href="#tabs">Смотреть тур</a>
+          <a class="welcome-image__link" href="#tabs">Смотреть тур<svg class="welcome-image__arrow-down" width="14" height="14"><use xlink:href="#sprite-arrow-down"></use></svg></a>
         </div>
       </div>
+
+      <section class="places-of-visit">
+        <h2 class="places-of-visit__main-heading" id="places-of-visit">Места посещения</h2>
+        <p class="places-of-visit__paragrath">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+        <ul class="places-of-visit__countries reset-list">
+          <li class="places-of-visit__country">
+            <a class="places-of-visit__link" href="#tabs">
+              <h3 class="places-of-visit__country-name">Греция</h3>
+              <picture class="places-of-visit__picture">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet-mobile@1x.webp 1x">
+                <source type="image/webp" srcset="img/greece-desktop@1x.webp 1x">
+                <source media="(max-width: 1023px)" srcset="img/greece-tablet-mobile@1x.jpg 1x">
+                <img class="places-of-visit__img" src="img/greece-desktop@1x.jpg" width="350" height="430" alt="Красивый вид гор">
+              </picture>
+              <div class="places-of-visit__hover-block">
+                <h3 class="places-of-visit__hover-text">Смотреть подробнее<h3>
+              </div>
+            </a>
+          </li>
+          <li class="places-of-visit__country">
+            <a class="places-of-visit__link" href="#tabs">
+              <h3 class="places-of-visit__country-name">Албания</h3>
+              <picture class="places-of-visit__picture">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet-mobile@1x.webp 1x">
+                <source type="image/webp" srcset="img/albania-desktop@1x.webp 1x">
+                <source media="(max-width: 1023px)" srcset="img/albania-tablet-mobile@1x.jpg 1x">
+                <img class="places-of-visit__img" src="img/albania-desktop@1x.jpg" width="350" height="430" alt="Красивый вид побережья сверху">
+              </picture>
+              <div class="places-of-visit__hover-block">
+                <h3 class="places-of-visit__hover-text">Смотреть подробнее<h3>
+              </div>
+            </a>
+          </li>
+          <li class="places-of-visit__country">
+            <a class="places-of-visit__link" href="#tabs">
+              <h3 class="places-of-visit__country-name">Македония</h3>
+              <picture class="places-of-visit__picture">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/makedonia-tablet-mobile@1x.webp 1x">
+                <source type="image/webp" srcset="img/makedonia-desktop@1x.webp 1x">
+                <source media="(max-width: 1023px)" srcset="img/makedonia-tablet-mobile@1x.jpg 1x">
+                <img class="places-of-visit__img" src="img/makedonia-desktop@1x.jpg" width="350" height="430" alt="Дом на фоне моря">
+              </picture>
+              <div class="places-of-visit__hover-block">
+                <h3 class="places-of-visit__hover-text">Смотреть подробнее<h3>
+              </div>
+            </a>
+          </li>
+          <li class="places-of-visit__country">
+            <a class="places-of-visit__link" href="#tabs">
+              <h3 class="places-of-visit__country-name">Черногория</h3>
+              <picture class="places-of-visit__picture">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tablet-mobile@1x.webp 1x">
+                <source type="image/webp" srcset="img/montenegro-desktop@1x.webp 1x">
+                <source media="(max-width: 1023px)" srcset="img/montenegro-tablet-mobile@1x.jpg 1x">
+                <img class="places-of-visit__img" src="img/montenegro-desktop@1x.jpg" width="350" height="430" alt="Вид канала в лесу сверху">
+              </picture>
+              <div class="places-of-visit__hover-block">
+                <h3 class="places-of-visit__hover-text">Смотреть подробнее<h3>
+              </div>
+            </a>
+          </li>
+          <li class="places-of-visit__country">
+            <a class="places-of-visit__link" href="#tabs">
+              <h3 class="places-of-visit__country-name">Хорватия</h3>
+              <picture class="places-of-visit__picture">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tablet-mobile@1x.webp 1x">
+                <source type="image/webp" srcset="img/croatia-desktop@1x.webp 1x">
+                <source media="(max-width: 1023px)" srcset="img/croatia-tablet-mobile@1x.jpg 1x">
+                <img class="places-of-visit__img" src="img/croatia-desktop@1x.jpg" width="350" height="430" alt="Озеро в пещере">
+              </picture>
+              <div class="places-of-visit__hover-block">
+                <h3 class="places-of-visit__hover-text">Смотреть подробнее<h3>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="places-of-visit__countries-list-wrapper">
+          <ul class="places-of-visit__countries-list reset-list" id="tabs">
+            <li class="places-of-visit__countries-list-item">Греция</li>
+            <li class="places-of-visit__countries-list-item">Албания</li>
+            <li class="places-of-visit__countries-list-item">Македония</li>
+            <li class="places-of-visit__countries-list-item">Черногория</li>
+            <li class="places-of-visit__countries-list-item">Хорватия</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="countries-tabs">
+        <picture class="countries-tabs__map">
+          <source type="image/webp" srcset="img/europe-map.webp 1x">
+          <img class="countries-tabs__map-img" src="img/europe-map.png" width="1444" height="1089" alt="Карта Европы">
+        </picture>
+      </section>
 
     </main>
 

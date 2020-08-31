@@ -3,18 +3,21 @@
   position: relative;
   margin: 0 auto;
 
-  max-width: 1920px;
+  max-width: $max-width;
 }
 
 .welcome-image__text {
   position: absolute;
-  top: 16.5%;
-  right: 17.3%;
+  top: 22%;
+  right: 23.1%;
 
-  width: 500px;
+  width: 400px;
 }
 
 .welcome-image__heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+
   font-size: 55px;
   line-height: 80px;
   font-weight: 600;
@@ -23,20 +26,28 @@
 }
 
 .welcome-image__paragraph {
-font-size: 16px;
-line-height: 27px;
-font-weight: 400;
-letter-spacing: -0.466667px;
-color: #ffffff;
+  margin-bottom: 35px;
+
+  padding-right: 25px;
+
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: -0.466667px;
+  color: #ffffff;
 }
 
 .welcome-image__link {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
   width: 340px;
   min-height: 75px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   font-size: 12px;
   line-height: 15px;
@@ -46,4 +57,68 @@ color: #ffffff;
   color: #ffffff;
 
   background-color: #fe7865;
+}
+
+@media (max-width: 1300px) {
+  .welcome-image__text {
+    top: 10%;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .welcome-image__text {
+    right: 50%;
+    transform: translateX(50%);
+    top: 59px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .welcome-image__heading {
+    margin-bottom: 3px;
+
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0;
+  }
+
+  .welcome-image__paragraph {
+    margin-bottom: 9px;
+
+    padding-right: 0;
+
+    text-align: center;
+  }
+
+  .welcome-image__link {
+    width: 250px;
+    min-height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .welcome-image__text {
+    top: 35%;
+
+    width: 220px;
+  }
+
+  .welcome-image__heading {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .welcome-image__paragraph,
+  .welcome-image__link {
+    display: none;
+  }
 }
