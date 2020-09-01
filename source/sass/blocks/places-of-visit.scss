@@ -156,6 +156,10 @@
   &:last-child {
     margin-right: 0;
   }
+
+  &--greece {
+    color: #fe7865;
+  }
 }
 
 @media (max-width: $tablet-width) {

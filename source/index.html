@@ -60,7 +60,7 @@
         <p class="places-of-visit__paragrath">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
         <ul class="places-of-visit__countries reset-list">
           <li class="places-of-visit__country">
-            <a class="places-of-visit__link" href="#tabs">
+            <a class="places-of-visit__link places-of-visit__link--greece" href="#tabs">
               <h3 class="places-of-visit__country-name">Греция</h3>
               <picture class="places-of-visit__picture">
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet-mobile@1x.webp 1x">
@@ -74,7 +74,7 @@
             </a>
           </li>
           <li class="places-of-visit__country">
-            <a class="places-of-visit__link" href="#tabs">
+            <a class="places-of-visit__link places-of-visit__link--albania" href="#tabs">
               <h3 class="places-of-visit__country-name">Албания</h3>
               <picture class="places-of-visit__picture">
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet-mobile@1x.webp 1x">
@@ -88,7 +88,7 @@
             </a>
           </li>
           <li class="places-of-visit__country">
-            <a class="places-of-visit__link" href="#tabs">
+            <a class="places-of-visit__link places-of-visit__link--makedonia" href="#tabs">
               <h3 class="places-of-visit__country-name">Македония</h3>
               <picture class="places-of-visit__picture">
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/makedonia-tablet-mobile@1x.webp 1x">
@@ -102,7 +102,7 @@
             </a>
           </li>
           <li class="places-of-visit__country">
-            <a class="places-of-visit__link" href="#tabs">
+            <a class="places-of-visit__link places-of-visit__link--montenegro" href="#tabs">
               <h3 class="places-of-visit__country-name">Черногория</h3>
               <picture class="places-of-visit__picture">
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tablet-mobile@1x.webp 1x">
@@ -116,7 +116,7 @@
             </a>
           </li>
           <li class="places-of-visit__country">
-            <a class="places-of-visit__link" href="#tabs">
+            <a class="places-of-visit__link places-of-visit__link--croatia" href="#tabs">
               <h3 class="places-of-visit__country-name">Хорватия</h3>
               <picture class="places-of-visit__picture">
                 <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tablet-mobile@1x.webp 1x">
@@ -132,20 +132,167 @@
         </ul>
         <div class="places-of-visit__countries-list-wrapper">
           <ul class="places-of-visit__countries-list reset-list" id="tabs">
-            <li class="places-of-visit__countries-list-item">Греция</li>
-            <li class="places-of-visit__countries-list-item">Албания</li>
-            <li class="places-of-visit__countries-list-item">Македония</li>
-            <li class="places-of-visit__countries-list-item">Черногория</li>
-            <li class="places-of-visit__countries-list-item">Хорватия</li>
+            <li class="places-of-visit__countries-list-item places-of-visit__countries-list-item--greece">Греция</li>
+            <li class="places-of-visit__countries-list-item places-of-visit__countries-list-item--albania">Албания</li>
+            <li class="places-of-visit__countries-list-item places-of-visit__countries-list-item--makedonia">Македония</li>
+            <li class="places-of-visit__countries-list-item places-of-visit__countries-list-item--montenegro">Черногория</li>
+            <li class="places-of-visit__countries-list-item places-of-visit__countries-list-item--croatia">Хорватия</li>
           </ul>
         </div>
       </section>
 
       <section class="countries-tabs">
-        <picture class="countries-tabs__map">
-          <source type="image/webp" srcset="img/europe-map.webp 1x">
-          <img class="countries-tabs__map-img" src="img/europe-map.png" width="1444" height="1089" alt="Карта Европы">
-        </picture>
+        <div class="countries-tabs__map-wrapper">
+          <picture class="countries-tabs__map">
+            <source type="image/webp" srcset="img/europe-map.webp 1x">
+            <img class="countries-tabs__map-img" src="img/europe-map.png" width="1444" height="1089" alt="Карта Европы">
+          </picture>
+        </div>
+        <div class="countries-tabs__country-tab countries-tabs__country-tab--greece">
+          <div class="countries-tabs__country-description">
+            <h2 class="countries-tabs__heading">Греция</h2>
+            <p class="countries-tabs__paragraph">
+              На севере Греции находится один из крупнейших комплексов монастырей,
+              расположенных на вершинах скал. Название его «Метеора» буквально
+              переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции.
+              После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров,
+              наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
+            </p>
+            <a class="countries-tabs__link" href="">Купить тур сейчас</a>
+          </div>
+          <picture class="countries-tabs__picture">
+            <source type="image/webp" srcset="img/greece-tab-desktop@1x.webp 1x">
+            <img class="countries-tabs__img" src="img/greece-tab-desktop@1x.jpg" width="430" height="596" alt="Красивый вид гор">
+          </picture>
+          <div class="countries-tabs__comment">
+            <h2 class="countries-tabs__comment-heading">Отзывы</h2>
+            <p class="countries-tabs__comment-paragraph">
+              Метеоры в Греции можно сравнить разве что с Монсерратт в Испании.
+              Такие же высоченные скалы. Но здесь потрясает масштаб.
+              Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!
+            </p>
+            <div class="countries-tabs__comment-author">
+              <img class="countries-tabs__comment-author-image" src="img/greece-author-photo.png" width="38" height="38" alt="Фото автора">
+              <p class="countries-tabs__comment-author-name">
+                Влада Голицина
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="countries-tabs__country-tab countries-tabs__country-tab--albania">
+          <div class="countries-tabs__country-description">
+            <h2 class="countries-tabs__heading">Албания</h2>
+            <p class="countries-tabs__paragraph">
+              В Албании мы посетим Курорт Ксамиль.
+              Этот курорт поразит вас чистейшей водой и удивительным пляжем.
+              Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок.
+              Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
+            </p>
+            <a class="countries-tabs__link" href="">Купить тур сейчас</a>
+          </div>
+          <picture class="countries-tabs__picture">
+            <source type="image/webp" srcset="img/albania-tab-desktop@1x.webp 1x">
+            <img class="countries-tabs__img" src="img/albania-tab-desktop@1x.jpg" width="430" height="596" alt="Красивый вид побережья сверху">
+          </picture>
+          <div class="countries-tabs__comment">
+            <h2 class="countries-tabs__comment-heading">Отзывы</h2>
+            <p class="countries-tabs__comment-paragraph">
+              Замечательный курорт, обязательно стоит посетить.
+              В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)
+            </p>
+            <div class="countries-tabs__comment-author">
+              <img class="countries-tabs__comment-author-image" src="img/albania-author-photo.png" width="38" height="38" alt="Фото автора">
+              <p class="countries-tabs__comment-author-name">
+                Маришка
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="countries-tabs__country-tab countries-tabs__country-tab--makedonia">
+          <div class="countries-tabs__country-description">
+            <h2 class="countries-tabs__heading">Македония</h2>
+            <p class="countries-tabs__paragraph">
+              В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно
+              красивой лесистой местности возле Охридского озера и Самуиловой твердыни.
+              А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.
+            </p>
+            <a class="countries-tabs__link" href="">Купить тур сейчас</a>
+          </div>
+          <picture class="countries-tabs__picture">
+            <source type="image/webp" srcset="img/makedonia-tab-desktop@1x.webp 1x">
+            <img class="countries-tabs__img" src="img/makedonia-tab-desktop@1x.jpg" width="430" height="596" alt="Дом на фоне моря">
+          </picture>
+          <div class="countries-tabs__comment">
+            <h2 class="countries-tabs__comment-heading">Отзывы</h2>
+            <p class="countries-tabs__comment-paragraph">
+              Я бы сказал необычное старое здание. В архитектуре я не разбираюсь,
+              но подъем в гору был очень веселым так как люди оказались легкими и заводными.
+              Красота природы впечатлила, особенно после долгого пути в гору.
+            </p>
+            <div class="countries-tabs__comment-author">
+              <img class="countries-tabs__comment-author-image" src="img/makedonia-author-photo.png" width="38" height="38" alt="Фото автора">
+              <p class="countries-tabs__comment-author-name">
+                Михаил Кузьмин
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="countries-tabs__country-tab countries-tabs__country-tab--montenegro">
+          <div class="countries-tabs__country-description">
+            <h2 class="countries-tabs__heading">Черногория</h2>
+            <p class="countries-tabs__paragraph">
+              Черногория удивит нас самым большим в Европе каньоном реки Тара,
+              который в некоторых местах высотой берегов доходит до 1300 метров,
+              а шириной не превышает трех. При этом длина каньона составляет 80 км.
+            </p>
+            <a class="countries-tabs__link" href="">Купить тур сейчас</a>
+          </div>
+          <picture class="countries-tabs__picture">
+            <source type="image/webp" srcset="img/montenegro-tab-desktop@1x.webp 1x">
+            <img class="countries-tabs__img" src="img/montenegro-tab-desktop@1x.jpg" width="430" height="596" alt="Вид канала в лесу сверху">
+          </picture>
+          <div class="countries-tabs__comment">
+            <h2 class="countries-tabs__comment-heading">Отзывы</h2>
+            <p class="countries-tabs__comment-paragraph">
+              Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую
+            </p>
+            <div class="countries-tabs__comment-author">
+              <img class="countries-tabs__comment-author-image" src="img/montenegro-author-photo.png" width="38" height="38" alt="Фото автора">
+              <p class="countries-tabs__comment-author-name">
+                Анастасия Мей
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="countries-tabs__country-tab countries-tabs__country-tab--croatia">
+          <div class="countries-tabs__country-description">
+            <h2 class="countries-tabs__heading">Хорватия</h2>
+            <p class="countries-tabs__paragraph">
+              В Хорватии мы посетим необычайную пещеру названную Бередине.
+              Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов,
+              украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.
+            </p>
+            <a class="countries-tabs__link" href="">Купить тур сейчас</a>
+          </div>
+          <picture class="countries-tabs__picture">
+            <source type="image/webp" srcset="img/croatia-tab-desktop@1x.webp 1x">
+            <img class="countries-tabs__img" src="img/croatia-tab-desktop@1x.jpg" width="430" height="596" alt="Озеро в пещере">
+          </picture>
+          <div class="countries-tabs__comment">
+            <h2 class="countries-tabs__comment-heading">Отзывы</h2>
+            <p class="countries-tabs__comment-paragraph">
+              Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема!
+              А то, что все это формировалось тысячелетиями, мега необычно.
+              Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)
+            </p>
+            <div class="countries-tabs__comment-author">
+              <img class="countries-tabs__comment-author-image" src="img/croatia-author-photo.png" width="38" height="38" alt="Фото автора">
+              <p class="countries-tabs__comment-author-name">
+                Владимир Мулицин
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
     </main>
@@ -205,5 +352,6 @@
     </footer>
 
     <script src="js/menu.js"></script>
+    <script src="js/tabs-switch.js"></script>
   </body>
 </html>
